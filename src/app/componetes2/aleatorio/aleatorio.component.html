@@ -1,5 +1,26 @@
 
 <div class="contenedor">
 <h2>Dale click al boton y sorprendete con un platillo exotico!</h2>
-<button class="boton">¡Dale Click!</button>
+<button class="boton" (click)="obtenerPlatillo()">¡Dale Click!</button>
 </div>
+
+@if(mealData){
+    <div class="platillo" >
+        <img [src]="this.mealData.meals[0].strMealThumb">
+        <p>{{this.mealData.meals[0].strMeal}}</p>
+        <p>Categoria:Region: <span>{{mealData.meals[0].strCategory}} -  {{mealData.meals[0].strArea}} </span></p>
+
+    <div>
+        <p>Instrucciones de preparacion:</p>
+        <p class="instrucciones">{{this.mealData.meals[0].strInstructions}}</p>
+    </div>
+ 
+    <div class="platillo__preparar">
+    <p class="platillo__pregunta">¿Quieres prepararlo?</p>
+    <a class="platillo__enlace" href="https://www.youtube.com/results?search_query={{mealData.meals[0].strMeal}}" target="_blank" rel="noopener">
+      Ver video en YouTube
+    </a>
+  </div>
+   </div>
+    
+}

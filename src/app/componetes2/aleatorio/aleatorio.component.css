@@ -17,3 +17,149 @@
     align-items: center;
     justify-content: center;
 }
+/* Contenedor general */
+.contenedor {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 500px;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Título */
+.contenedor h2 {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Botón interactivo */
+.boton {
+  background:  #ea4f59;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+
+
+.contenedor + .platillo {
+  margin-top: 2rem;
+}
+
+/* Sección del platillo */
+.platillo {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* Imagen del platillo */
+.platillo img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+/* Nombre del platillo */
+.platillo p:nth-of-type(1) {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #444;
+}
+
+/* Detalles: categoría y región */
+.platillo p:nth-of-type(2) {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+}
+
+.platillo span {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive: ajustar en móviles */
+@media (max-width: 600px) {
+  .contenedor {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .boton {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .platillo {
+    margin: 1rem auto;
+  }
+}
+
+.platillo__preparar {
+  margin-top: 1.5rem;
+}
+
+.platillo__pregunta {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.platillo__enlace {
+  display: inline-block;
+  background: #e62117;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.platillo__enlace:hover {
+  background: #cc1f14;
+  transform: translateY(-1px);
+}
+
+.platillo__enlace:active {
+  background: #a81a10;
+  transform: translateY(0);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 600px) {
+  .contenedor {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .contenedor__boton {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .platillo {
+    margin: 1rem auto;
+  }
+
+  .platillo__enlace {
+    width: 100%;
+  }
+  
+}
