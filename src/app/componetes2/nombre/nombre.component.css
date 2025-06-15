@@ -1,0 +1,48 @@
+.titulo {
+  text-align: center;
+  cursor: pointer;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.buscador input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.buscador input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.buscador input[type="text"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+}
+
+.buscador button {
+  margin-left: -50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007BFF;
+  font-size: 1.2rem;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.buscador button:hover {
+  color: #0056b3;
+}

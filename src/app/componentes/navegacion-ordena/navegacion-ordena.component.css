@@ -1,0 +1,57 @@
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.menu-header img {
+  width: 40px;
+  height: 40px;
+}
+.menu-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.opcion-card {
+  background-color: #fff;
+  border: 2px solid #cc0000;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.opcion-card h3 {
+  margin-top: 0;
+  color: #cc0000;
+}
+.opcion-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 10px 0;
+}
+.opcion-card button {
+  background-color: #fff;
+  border: 2px solid #cc0000;
+  color: #cc0000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.opcion-card button:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+.footer{
+  margin-top: 360px;
+}

@@ -1,0 +1,19 @@
+.boton{
+    background-color: #e8505b;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.1s;
+    padding: 10px;
+    font-size: 25px;
+    transition: background-color ease-out 20ms;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #d21824;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
