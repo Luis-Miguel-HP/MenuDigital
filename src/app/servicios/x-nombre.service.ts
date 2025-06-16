@@ -10,11 +10,11 @@ interface mealsRes{
   providedIn: 'root'
 })
 export class XNombreService {
-  private apiUrl = 'https://www.themealdb.com/api/json/v1/1/search.php';
+  private apiUrl ="https://www.themealdb.com/api/json/v1/1"
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
-  buscarPlatillo(nombre: string): Observable<mealsRes> {
-    return this.http.get<mealsRes>(`${this.apiUrl}?s=${encodeURIComponent(nombre)}`);
+  obtenerNombre(name: string): Observable<any>{
+    return this.http.get<Response>(`${this.apiUrl}/search.php?s=${name}`)
   }
 }

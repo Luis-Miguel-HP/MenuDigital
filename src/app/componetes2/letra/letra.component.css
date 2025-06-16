@@ -97,3 +97,9 @@
 .buscador button:hover {
   color: #0056b3;
 }
+
+.center{
+  text-align: center;
+  font-weight: 900;
+
+}
