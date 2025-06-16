@@ -1,0 +1,23 @@
+<h2 class="titulo"> 🔎 Busca por letra</h2>
+<div class="buscador">
+  <input [(ngModel)]="Letra"  type="text" placeholder="Buscar...">
+  <button (click)="buscar()" >
+    🔍
+  </button>
+</div>
+
+<div class="contenedor">
+  @for(comida of meals; track comida.meals){
+    <div class="platillo">
+      <p>{{comida.strMeal}}</p>
+      <img [src]="comida.strMealThumb">
+      <p>Categoria: <span>{{comida.strCategory}} – {{comida.strArea}}</span></p>
+      <div class="platillo_preparar">
+        <p class="platillo__pregunta">¿Quieres prepararlo?</p>
+        <a class="platillo__enlace" href="https://www.youtube.com/results?search_query={{comida.strMeal}}" target="_blank" rel="noopener">
+          Ver video en YouTube
+        </a>
+      </div>
+    </div>
+  }
+</div>

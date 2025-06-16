@@ -1,0 +1,99 @@
+/* Contenedor de all platillos */
+.contenedor {
+  display: grid;
+  gap: 50px; /* espacio entre columnas y filas */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center; /* centra las tarjetas si quedan sobrantes */
+  padding: 16px;
+ 
+}
+
+/* Cada tarjeta misma */
+.platillo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 16px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/* Imagen ajustada dentro de la tarjeta */
+.platillo img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Estilos para el enlace */
+.platillo__enlace {
+  margin-top: auto; 
+  background: #e62117;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+.platillo__enlace:hover {
+  background: #ea5951;
+}
+
+/* Texto interno */
+.platillo__pregunta {
+  margin-top: 12px;
+  font-weight: bold;
+}
+.titulo {
+  text-align: center;
+  cursor: pointer;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.buscador input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.buscador input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.buscador input[type="text"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+}
+
+.buscador button {
+  margin-left: -50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007BFF;
+  font-size: 1.2rem;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.buscador button:hover {
+  color: #0056b3;
+}

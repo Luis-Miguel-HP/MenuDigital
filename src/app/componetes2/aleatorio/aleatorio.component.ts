@@ -20,6 +20,7 @@ export class AleatorioComponent {
     .subscribe((data)=>{
       this.mealData = data
       console.log(this.mealData) 
+     
   
 
     })
